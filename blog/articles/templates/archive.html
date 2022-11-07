@@ -19,7 +19,8 @@
   </div>
   <div class="archive">
       {% for post in posts %}
-      <a href="" class="fold-button" style="float: right">свернуть</a>
+      <div class="post">
+          <a href="#" class="fold-button" style="float: right">свернуть</a>
         <div class="one-post">
             <h2 class="post-title">
                 <a class="post-title" href="/article/{{ post.id }}">{{ post.title }}</a>
@@ -30,6 +31,7 @@
             </div>
             <p class="article-text">{{ post.get_excerpt }}</p>
         </div>
+      </div>
       {% endfor %}
   </div>
   <!-- <script src="{{ STATIC_URL }}/static/js/helloworld.js"></script> -->
